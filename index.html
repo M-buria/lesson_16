@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/resset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>lesson 16</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+
+        </header>
+
+        <main class="page">
+            <div class="page__section">
+                <form class="form" action="#" enctype="multipart/form-data" method="post">
+                    <div class="form__line">
+                        <label class="form__label" for="age-01">Введіть ваш вік:</label>
+                        <input required name="age" type="text" id="age-01" class="form__input" placeholder="Ваш вік">
+                    </div>
+
+                    <div class="form__line">
+                        <label class="form__label" for="email-01">Введіть ваш E-mail:</label>
+                        <input required name="email" type="email" id="email-01" class="form__input"
+                            placeholder="Ваш E-mail">
+                    </div>
+
+                    <div class="form__line">
+                        <label class="form__label" for="tell-01">Введіть ваш телефон:</label>
+                        <input class="form__input" id="tell-01" autocomplete="off" placeholder="Ваш номер телефон"
+                            name="phone" type="tel">
+                    </div>
+
+                    <div class="form__line">
+                        <label class="form__label" for="password-01">Введіть ваш пароль:</label>
+                        <input class="form__input" id="password-01" placeholder="Введіть ваш пароль" name="pass"
+                            type="password">
+                    </div>
+
+                    <div class="form__line">
+                        <label class="form__label" for="num-01">Введіть ваше число:</label>
+                        <input class="form__input" id="num-01" placeholder="Ваше число" name="number" type="number">
+                    </div>
+
+                    <div class="form__line">
+                        <label class="form__label" for="searh-01">Введіть пошуковий запит:</label>
+                        <input class="form__input" id="searh-01" placeholder="Пошук" name="search" type="search">
+                    </div>
+
+                    <div class="form__line">
+                        <input class="form__input form__input--chk" required id="car-01" name="car" type="checkbox">
+                        <label class="form__label " for="car-01">Є авто?</label>
+                    </div>
+                    <div class="form__line">
+                        <input class="form__input form__input--chk" required id="home-01" name="home" type="checkbox">
+                        <label class="form__label " for="home-01">Є домівка?</label>
+                    </div>
+
+                    <div class="checkbox">
+                        <input class="checkbox__input" id="garage" value="yes" name="garage" type="checkbox">
+                        <label class="checkbox__label " for="garage"><span class="checkbox__text">Є гараж</span></label>
+                    </div>
+
+                    <div class="form__line">
+                        <div class="form__title">Улюблена тваринка</div>
+                        <div class="form__radio">
+                            <input class="form__input form__input--radio" checked required id="pet-01" value="cat"
+                                name="pet" type="radio">
+                            <label class="form__label " for="pet-01">кішка</label>
+                        </div>
+                        <div class="form__radio">
+                            <input class="form__input form__input--radio" required id="pet-02" value="dog" name="pet"
+                                type="radio">
+                            <label class="form__label " for="pet-02">собака</label>
+                        </div>
+                    </div>
+
+                    <div class="form__line">
+                        <label class="form__label" for="file">Додайте файл:</label>
+                        <input class="form__input form__input--file" id="file" multiple name="file" type="file">
+                    </div>
+
+                    <div class="form__line">
+                        <textarea name="massage" autocomplete="off" id="area-01" class="form__area"></textarea>
+                    </div>
+                    <div class="form__line">
+                        <button type="submit">Відправити</button>
+                        <button type="reset">Обнулити</button>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="layout">
+                <div class="layout__container">
+                    <div class="layout__body any-questions">
+                        <div class="any-questions__image">
+                            <img src="img/woman.svg" alt="woman">
+                        </div>
+                        <div class="any-questions__body">
+                            <div class="any-questions__title title-block">
+                                <div class="title-block__subtitle">Any questions?</div>
+                                <h2 class="title-block__title">Drop us a line</h2>
+                            </div>
+                            <form action="#" method="post" class="any-questions__form form-questions ">
+
+
+
+                                <div class="form-questions__line">
+                                    <label class="form-questions__label" for="f-name">First Name*</label>
+                                    <input class="form-questions__input" type="text" required id="f-name" name="f-name"
+                                        placeholder="Your first name">
+                                </div>
+
+                                <div class="form-questions__line">
+                                    <label class="form-questions__label" for="l-name">Last Name*</label>
+                                    <input class="form-questions__input" type="text" required id="l-name" name="l-name"
+                                        placeholder="Your last name">
+                                </div>
+
+
+                                <div class="form-questions__line">
+                                    <label class="form-questions__label" for="email-02">Email*</label>
+                                    <input class="form-questions__input" type="email" required id="email-02"
+                                        name="email-02" placeholder="Your working email">
+                                </div>
+
+
+                                <div class="form-questions__line">
+                                    <label class="form-questions__label" for="phone-02">Phone</label>
+                                    <input class="form-questions__input" type="tel" id="phone-02" name="phone-02"
+                                        placeholder="Your phone number">
+                                </div>
+
+                                <div class="form-questions__area area">
+                                    <label class="area__label" for="textarea">Message*</label>
+                                    <textarea class="area__text" name="textarea" id="textarea"
+                                        placeholder="Your message"></textarea>
+                                </div>
+
+                                <div class="form-questions__send send">
+                                    <div class="send__check checkbox-send">
+                                        <div class="checkbox-send__box">
+                                            <input class="checkbox-send__input" id="send" value="yes" name="agree"
+                                                type="checkbox">
+                                            <label class="checkbox-send__label " for="send">
+                                                <span class="checkbox-send__text">I agree to receive communications from
+                                                    Createx Online School</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <button class="send__button" type="submit"><span>Send message</span></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+        <footer class="footer">
+            я футер
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
